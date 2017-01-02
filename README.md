@@ -4,7 +4,6 @@ CacheJs是一个基于localStorage的数据缓存程序，主要用于缓存key-
 
 createCache函数参数及返回说明:
 
- * 创建一个缓存
  * @param options {object} 创建缓存的参数，object必须有name, deadline 或 length,request属性，分别代表缓存的名字（唯一），缓存数据的超时时间或缓存key的个数，request为请求数据的函数（当缓存不存在时则调用请求）
  * @returns {function(id, cb, ...)}  返回的这个函数先检测id对应的缓存是否存在，存在则返回，不存在则调用请求函数请求内容 cb后面的参数为调用requests时候需要传递的参数
 
